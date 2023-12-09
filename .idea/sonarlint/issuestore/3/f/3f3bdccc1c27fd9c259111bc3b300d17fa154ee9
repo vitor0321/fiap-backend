@@ -1,3 +1,13 @@
 
 H
-java:S1452"&Remove usage of generic wildcard type.(Λ¦ρκόÿÿÿÿ8ΉΣγΑ1
+java:S1452#"&Remove usage of generic wildcard type.(Λ¦ρκόÿÿÿÿ8Λ¨„“Β1
+]	java:S1254"<This block of commented-out lines of code should be removed.(ρ¥ωψÿÿÿÿ8€…‡“Β1
+X	java:S1258"<This block of commented-out lines of code should be removed.(Ίε’8…‡“Β1
+C
+java:S1452@"&Remove usage of generic wildcard type.(ÿΒέ8Ξ¨„“Β1
+C
+java:S1452M"&Remove usage of generic wildcard type.(τ΄ΰΑ8Ο¨„“Β1
+g
+java:S1128	"ERemove this unused import 'org.springframework.data.domain.Pageable'.(‡λ‚Φύÿÿÿÿ8„…‡“Β1
+^
+java:S1128"ARemove this unused import 'javax.print.attribute.standard.Media'.(‰δΑ8„…‡“Β1

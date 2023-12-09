@@ -1,0 +1,11 @@
+{
+  "uuid": "0adf3179-bb27-4fcf-91a4-11d06e0915cb",
+  "name": "devePermitirBuscarMensagem()",
+  "children": [
+    "5c46f51d-33f0-4fd6-833e-e3ccd7f60f98"
+  ],
+  "befores": [],
+  "afters": [],
+  "start": 1701804668996,
+  "stop": 1701804669004
+}

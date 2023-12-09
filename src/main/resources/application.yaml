@@ -1,16 +1,16 @@
+server:
+  port: 8080
 spring:
   datasource:
-    url: jbc:h2:mem:testdb
+    driver-class-name: org.postgresql.Driver
     username: root
     password: toor
-    driverClassName: org.h2.Driver
+    url: jdbc:postgresql://localhost:5432/backend
   jpa:
-    database: h2
-    database-platform: org.hibernate.dialect.H2Dialect
-    #usar apenas em desenvolvimento
-    defer-datasource-initialization: true
     hibernate:
       ddl-auto: create-drop
-  h2:
-    console:
-      enable: true
+
+logging:
+  level:
+    root: ERROR
+    org.springframework: ERROR

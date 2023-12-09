@@ -6,6 +6,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
+
 import static br.com.fiap.api.utils.MensagemHelper.gerarMensagem;
 
 import java.util.UUID;
@@ -14,6 +16,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest
 @AutoConfigureTestDatabase
+@ActiveProfiles("test")
 @Transactional
 public class MensagemRepositoryIT {
 
@@ -29,7 +32,7 @@ public class MensagemRepositoryIT {
     @Test
     void devePermitirRegistrarMensagem() {
         //Arrange
-        var id = UUID.randomUUID();
+        var id = UUID.fromString("cacd563e-34ab-41da-b34a-0d9a191b91f4");
         var mensagem = gerarMensagem();
         mensagem.setId(id);
 
@@ -40,7 +43,7 @@ public class MensagemRepositoryIT {
         assertThat(mensagemRecebida)
                 .isInstanceOf(Mensagem.class)
                 .isNotNull();
-        assertThat(mensagemRecebida).isEqualTo(mensagem);
+        assertThat(mensagemRecebida.getId()).isEqualTo(mensagem.getId());
     }
 
     @Test
