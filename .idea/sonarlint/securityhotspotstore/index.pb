@@ -50,9 +50,5 @@ o
 Dockerfile,6/6/6651ddff6eb82c840ced7c1dddee15c6e1913dd4
 C
 docker-compose.yaml,e/f/ef8def03dc8f162799089e9b5f4321201c8810d5
-r
-Bsrc/test/java/br/com/fiap/api/performace/PerformaceSimulation.java,a/c/ac07923ce7a9d201f32fa7ca6b253c5e97a988ad
-s
-Csrc/test/java/br/com/fiap/api/performance/PerformaceSimulation.java,0/1/01da1c3dd941926446d9e26c84736700f9026711
 t
 Dsrc/test/java/br/com/fiap/api/performance/PerformanceSimulation.java,3/a/3a7e59ffc2a7044d67f9636da109b44656f82ad3
